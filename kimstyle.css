@@ -1,0 +1,39 @@
+* {box-sizing: border-box;
+}
+
+h1 {text-align: center;
+font-family: 'Montserrat', sans-serif;
+color: darkslateblue;}
+h2 {color: darkslateblue;
+font-family: 'Nanum Gothic', sans-serif;}
+body {background-color: lightgray;}
+
+.sum {
+  background-color: lightblue;
+  width: 900px;
+  padding: 15px;
+  border: 15px solid navy;
+  font-size: 1em;
+  margin: auto;
+  text-align: center
+}
+
+.cer  {
+  background-color: lightblue;
+  width: 300px;
+  padding: 10px;
+  border: 15px solid navy;
+  font-size: 1em;
+  margin: auto;
+  text-align: justify
+}
+
+
+.imgsf  {
+  background-color: lightblue;
+  width: 200px;
+  padding: 10px;
+  border: 15px solid navy;
+  margin: auto;
+}
+
