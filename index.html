@@ -61,6 +61,18 @@
 </ul> 
 </section>
 
+<button onmouseover="displayDate()">Confused about today's date?!</button>
+
+<script>
+var d = new Date();
+function displayDate() {
+  document.getElementById("javadate").innerHTML = d.toDateString();
+}
+</script>
+
+<p id="javadate"></p>
+
+
 <section>
 <h2>Professional Experience</h2>
 <h4><a href="https://www.kent.edu">Kent State University</a> (03/15-present), Business Systems Analyst</h4>
