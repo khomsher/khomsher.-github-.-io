@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="kimstyle.css">
+<title>Kim's API Homework</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>GitHub User Data</h1>
+<p>User ID:</p>
+<p id='userNo'></p>
+<p>User Name:</p>
+<p id='userName'></p>
+
+
+<script>
+var request = new XMLHttpRequest();
+
+request.open('GET','https://api.github.com/users/petrgazarov');
+
+request.onload = function()  {
+    var response = request.response;
+    var parsedData = JSON.parse(response);
+    console.log(parsedData);
+    var number = parsedData.id;
+    console.log(number);
+    document.getElementById('userNo').innerHTML = number;
+    var userName = parsedData.name;
+    document.getElementById('userName').innerHTML = userName;
+}
+
+request.send();
+</script>
+     
+</body>
+</html>
